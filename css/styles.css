@@ -864,6 +864,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
+    padding: 0 16px;
     width: 768px;
   }
   .advantages-list {
@@ -875,19 +876,18 @@ img {
     width: calc((100% - 24px) / 2);
   }
 
-  .team-list .container {
-    width: 584px;
-  }
-
   .team-list {
-    /* flex-basis: auto; */
     gap: 64px 24px;
+    width: 554px;
   }
 
   .team-item {
-    /* flex-basis: auto; */
     flex-direction: row;
+    flex-wrap: wrap;
     width: calc((100% - 24px) / 2);
+  }
+
+  .team-images {
   }
 }
 
@@ -932,6 +932,7 @@ img {
   }
 
   .team-list {
+    width: 1128px;
   }
 
   .team-item {
