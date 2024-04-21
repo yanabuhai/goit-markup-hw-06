@@ -176,33 +176,42 @@ img {
 
 .header-profile {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 72px 52px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-hero.jpeg);
+    url(../images/background-hero-mob.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
+@media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .header-profile {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-hero-mob-2x.jpeg);
+  }
+}
+
 .header-profile-wrap {
+  padding: 0;
 }
 
 .header-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
-  padding-bottom: 48px;
-  margin: 0 auto;
+  max-width: 216px;
+  padding-bottom: 72px;
 }
 
 .order-service-button {
@@ -212,7 +221,7 @@ img {
   color: #fff;
   background-color: #4d5ae5;
   display: block;
-  margin: 0 auto;
+  margin: 0 24px;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -652,9 +661,9 @@ img {
   top: 0;
   left: 0;
   z-index: 999;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden; */
+  visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -673,12 +682,9 @@ img {
   border-radius: 4px;
   width: 288px;
   min-height: 623px;
-  /* width: 408px;
-  min-height: 584px; */
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
-  /* padding: 72px 24px 24px 24px; */
   padding: 24px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -755,7 +761,6 @@ img {
   border-radius: 4px;
   background-color: transparent;
   width: 256px;
-  /* max-width: 360px; */
   height: 40px;
   padding-left: 38px;
   padding-bottom: 8px;
@@ -787,7 +792,6 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 256px;
-  /* width: 360px; */
   height: 120px;
   max-height: 126px;
   font-weight: 400;
@@ -835,7 +839,7 @@ img {
   background-color: transparent;
 }
 
-.modal-policy-label span {
+.modal-policy-label .modal-policy-span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -894,6 +898,40 @@ img {
     padding: 0 16px;
     width: 768px;
   }
+
+  .header-profile {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-hero-tab.jpeg);
+  }
+
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .header-profile {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-hero-tab-2x.jpeg);
+    }
+  }
+
+  .header-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto;
+    padding-bottom: 36px;
+  }
+
+  .order-service-button {
+    margin: 0 auto;
+  }
+
   .advantages-list {
     gap: 72px 24px;
   }
@@ -949,6 +987,24 @@ img {
   .subscribe-container {
     align-items: start;
   }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-text {
+    padding-top: 0;
+  }
+
+  .modal-input {
+    width: 360px;
+  }
+
+  .modal-textarea {
+    width: 360px;
+  }
 }
 
 /*--------------------------------------------------------*/
@@ -957,6 +1013,31 @@ img {
   .container {
     width: 1158px;
     padding: 0 15px;
+  }
+
+  .header-profile {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-hero.jpeg);
+  }
+
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .header-profile {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-hero-2x.jpeg);
+    }
+  }
+
+  .header-title {
+    padding-bottom: 48px;
   }
 
   .advantages-section {
