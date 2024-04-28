@@ -354,7 +354,7 @@ img {
   color: #fff;
   margin: auto;
   max-width: 216px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .order-service-button {
@@ -428,7 +428,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .advantages-paragraph {
@@ -496,7 +496,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .team-icon-list {
@@ -611,7 +611,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -1045,8 +1045,8 @@ img {
     width: 768px;
   }
 
-  .header {
-    padding-top: 16px;
+  .header-wrap {
+    align-items: center;
   }
 
   .header-button-wrap {
@@ -1092,7 +1092,7 @@ img {
     line-height: 1.07;
     max-width: 496px;
     margin: 0 auto;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
   }
 
   .order-service-button {
@@ -1108,8 +1108,13 @@ img {
     width: calc((100% - 24px) / 2);
   }
 
+  .advantages-title {
+    text-align: start;
+  }
+
   .team-container {
     width: 584px;
+    margin: 0 auto;
   }
 
   .team-list {
@@ -1196,6 +1201,14 @@ img {
     padding-top: 0;
   }
 
+  .header-wrap {
+    justify-content: flex-start;
+  }
+
+  .header-logo {
+    padding-right: 76px;
+  }
+
   .header-address-list {
     display: flex;
     flex-direction: row;
@@ -1203,6 +1216,7 @@ img {
   }
 
   .nav-address {
+    margin-left: auto;
     padding: 24px 0;
   }
 
@@ -1228,7 +1242,7 @@ img {
   }
 
   .header-title {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
   }
 
   .advantages-section {
@@ -1287,10 +1301,20 @@ img {
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 0;
   }
 
   .footer-flex {
     align-items: baseline;
-    justify-content: space-between;
+    gap: 0;
+    /* justify-content: space-between; */
+  }
+
+  .footer-logo-wrap {
+    margin-right: 111px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
   }
 }
